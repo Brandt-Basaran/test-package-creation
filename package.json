@@ -1,0 +1,26 @@
+{
+  "name": "@brandt-basaran/my-simple-construct",
+  "version": "0.1.0",
+  "description": "A very simple AWS CDK construct",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.0.0",
+    "constructs": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.0.0",
+    "aws-cdk": "^2.0.0",
+    "ts-node": "^10.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "license": "MIT"
+}
