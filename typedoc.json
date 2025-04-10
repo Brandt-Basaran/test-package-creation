@@ -1,9 +1,13 @@
 {
-    "entryPoints": ["lib"],
+    "name": "CDK Import POC",
+    "entryPoints": ["lib/*.ts"],
+    "entryPointStrategy": "expand",
     "out": "docs",
-    "includeVersion": true,
-    "exclude": ["node_modules"],
+    "plugin": ["typedoc-plugin-markdown"],
     "excludePrivate": true,
-    "excludeProtected": true,
-    "readme": "README.md"
+    "excludeExternals": true,
+    "theme": "markdown",
+    "readme": "README.md",
+    "includeVersion": true,
+    "$schema": "https://typedoc.org/schema.json",
   }
