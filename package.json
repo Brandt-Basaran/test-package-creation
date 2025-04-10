@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "docs": "typedoc --entryPoints lib/index.ts --out docs"
+    "docs": "typedoc --entryPoints lib/*.ts --out docs"
   },
   "peerDependencies": {
     "aws-cdk-lib": "^2.0.0",
